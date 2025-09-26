@@ -1,19 +1,18 @@
 <template>
     <div
         class="big"
-        v-for="(b_val,b_name) in nav_config"
-        :key="b_name"
-        @click.self="b_val.show = !b_val.show"
+        v-for="b in nav_key"
+        :key="b.id"
+        @click.self="b.show = !b.show"
         >
-        {{ b_val.name}}
+        {{ b.name}}
         <div
             class="small"
-            v-show="b_val.show"
-            v-for="(s_val,s_name) in b_val.content"
-            :key="s_name"
+            v-show="b.show"
+            v-for="s in nav_list[b.id]['categories']"
             @click="goto"
         >
-            {{s_val.name}}
+            {{s.name}}
         </div>
     </div>
 </template>
@@ -23,21 +22,26 @@
     export default{
         name: 'nav_list',
         setup(){
-            const nav_config = ref({})
-
+            const nav_key = ref({})
+            const nav_list = reactive({})
             onMounted(async () => {
-                const res = await fetch('./navs.json')
+                const res = await fetch('./user/navigation.json')
                 const data = await res.json()
 
 
                 for(const k in data){
                     data[k] = reactive(data[k])
                     data[k].show = false
-                }
-                nav_config.value = data
-            })
+                    const id = data[k].id
+                    const t = await fetch('./user/pages/'+id+'.json')
+                    const te = await t.json()
 
-            return {nav_config}
+                    nav_list[id]=te
+                }
+                nav_key.value = data
+            })
+            // console.log(nav_list)
+            return {nav_key,nav_list}
         },
         methods:{
             goto(){
