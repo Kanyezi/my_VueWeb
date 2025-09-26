@@ -1,0 +1,223 @@
+{
+  "title": "我的公众号",
+  "subtitle": "运营公众号常用的工具推荐",
+  "template": "bookmarks",
+  "categories": [
+    {
+      "name": "入门工具",
+      "icon": "fas fa-folder",
+      "sites": [
+        {
+          "name": "公众号",
+          "url": "https://mp.weixin.qq.com/",
+          "icon": "fa-solid fa-thumbs-up",
+          "description": "登录公众号的入口"
+        },
+        {
+          "name": "运营规范手册",
+          "url": "https://mp.weixin.qq.com/mp/opshowpage?action=newoplaw&token=2102862819&lang=zh_CN",
+          "icon": "fa-solid fa-envelope",
+          "description": "公众号运营规范"
+        },
+        {
+          "name": "驿站清单",
+          "url": "https://docs.qq.com/doc/DSWh5ZUhrQ0RhSEJY",
+          "icon": "fa-solid fa-paperclip",
+          "description": "小安驿站更新清单"
+        },
+        {
+          "name": "资源小站",
+          "url": "https://link3.cc/xiaoanso",
+          "icon": "fa-solid fa-flag",
+          "description": "小安搜资源小站"
+        }
+      ]
+    },
+    {
+      "name": "文章排版",
+      "icon": "fas fa-folder",
+      "sites": [
+        {
+          "name": "壹伴官网",
+          "url": "https://yiban.io/",
+          "icon": "fa-solid fa-pen-nib",
+          "description": "壹伴助手官网"
+        },
+        {
+          "name": "壹伴编辑器",
+          "url": "https://yibanbianji.com/",
+          "icon": "fa-solid fa-pen",
+          "description": "更好用的微信编辑器，但不止于此"
+        },
+        {
+          "name": "135编辑器",
+          "url": "https://www.135editor.com/",
+          "icon": "fa-solid fa-gears",
+          "description": "在线文章编辑器"
+        },
+        {
+          "name": "96编辑器",
+          "url": "https://bj.96weixin.com/",
+          "icon": "fa-solid fa-handshake",
+          "description": "在线内容编辑软件"
+        },
+        {
+          "name": "365编辑器",
+          "url": "https://www.365editor.com/",
+          "icon": "fa-solid fa-address-book",
+          "description": "在线内容编辑工具"
+        },
+        {
+          "name": "小墨鹰编辑器",
+          "url": "https://www.xmyeditor.com/",
+          "icon": "fa-solid fa-layer-group",
+          "description": "公众号图文排版工具"
+        },
+        {
+          "name": "易点编辑器",
+          "url": "https://www.wxeditor.com/",
+          "icon": "fa-solid fa-chart-simple",
+          "description": "简单易用编辑器"
+        },
+        {
+          "name": "主编编辑器",
+          "url": "https://www.zhubian.com/",
+          "icon": "fa-solid fa-fish",
+          "description": "主编都用的编辑器"
+        }
+      ]
+    },
+    {
+      "name": "图片素材",
+      "icon": "fas fa-folder",
+      "sites": [
+        {
+          "name": "Unsplash",
+          "url": "https://unsplash.com/",
+          "icon": "fab fa-github",
+          "description": "免版权高清图库"
+        },
+        {
+          "name": "Pxhere",
+          "url": "https://pxhere.com",
+          "icon": "fab fa-stack-overflow",
+          "description": "免版权放心使用"
+        },
+        {
+          "name": "Burst",
+          "url": "https://www.shopify.com/stock-photos",
+          "icon": "fas fa-link",
+          "description": "自然、城市、零售"
+        },
+        {
+          "name": "免扣素材网",
+          "url": "https://www.miankousucai.com/",
+          "icon": "fa-solid fa-image",
+          "description": "国内网站 访问速度很快"
+        }
+      ]
+    },
+    {
+      "name": "图片处理",
+      "icon": "fa-solid fa-wand-magic-sparkles",
+      "sites": [
+        {
+          "name": "iLoveIMG",
+          "url": "https://www.iloveimg.com/zh-cn",
+          "icon": "fa-solid fa-book",
+          "description": "图像文件在线编辑工具"
+        },
+        {
+          "name": "PhotoKit",
+          "url": "https://photokit.com/?lang=zh",
+          "icon": "fa-solid fa-barcode",
+          "description": "图片编辑器"
+        },
+        {
+          "name": "Canva可画",
+          "url": "https://www.canva.cn/",
+          "icon": "fa-solid fa-pen-to-square",
+          "description": "编辑和图形设计"
+        },
+        {
+          "name": "去水印",
+          "url": "https://www.arkthinker.com/zh/watermark-remover/",
+          "icon": "fa-solid fa-feather",
+          "description": "免费在线水印去除器"
+        }
+      ]
+    },
+    {
+      "name": "辅助写作",
+      "icon": "fas fa-folder",
+      "sites": [
+        {
+          "name": "腾讯元宝",
+          "url": "https://yuanbao.tencent.com/",
+          "icon": "fa-brands fa-weixin",
+          "description": "官方腾讯元宝"
+        },
+        {
+          "name": "豆包",
+          "url": "https://www.doubao.com/chat/",
+          "icon": "fab fa-stack-overflow",
+          "description": "字节跳动旗下AI智能助手"
+        },
+        {
+          "name": "秘塔写作猫",
+          "url": "https://xiezuocat.com/",
+          "icon": "fas fa-link",
+          "description": "AI写作"
+        },
+        {
+          "name": "kimi",
+          "url": "https://www.kimi.com/",
+          "icon": "fa-brands fa-web-awesome",
+          "description": "更强大的AI助手"
+        }
+      ]
+    },
+    {
+      "name": "数据采集",
+      "icon": "fas fa-folder",
+      "sites": [
+        {
+          "name": "新榜",
+          "url": "https://www.newrank.cn/hotInfo?platform=GZH",
+          "icon": "fa-solid fa-mug-saucer",
+          "description": "低粉爆文"
+        },
+        {
+          "name": "次幂数据",
+          "url": "https://www.cimidata.com/search/account",
+          "icon": "fa-solid fa-database",
+          "description": "数据采集"
+        }
+      ]
+    },
+    {
+      "name": "写作检查",
+      "icon": "fas fa-folder",
+      "sites": [
+        {
+          "name": "易撰",
+          "url": "https://www.yizhuan5.com/",
+          "icon": "fa-solid fa-forward",
+          "description": "原创检查"
+        },
+        {
+          "name": "违规检查",
+          "url": "https://www.lingkechaci.com/",
+          "icon": "fa-solid fa-newspaper",
+          "description": "零克查词"
+        },
+        {
+          "name": "AI检查",
+          "url": "https://matrix.tencent.com/ai-detect/ai_gen_txt",
+          "icon": "fa-solid fa-question",
+          "description": "朱雀AI检测助手"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "title": "小安驿站",
+  "description": "专注分享各种高质量APP、实用网站、电脑软件、浏览器插件、学习资料",
+  "author": "陈小安",
+  "favicon": "favicon.ico",
+  "logo_text": "小安驿站",
+  "fonts": {
+    "title": {
+      "family": "Poppins",
+      "weight": 600,
+      "source": "google"
+    },
+    "subtitle": {
+      "family": "Quicksand",
+      "weight": 500,
+      "source": "google"
+    },
+    "body": {
+      "family": "Noto Sans SC",
+      "weight": 400,
+      "source": "google"
+    }
+  },
+  "profile": {
+    "title": "欢迎来到我的导航站!",
+    "subtitle": "专注免费资源分享 欢迎订阅公众号「小安驿站」",
+    "description": "直达导航菜单"
+  },
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/xiaoanplus",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me",
+      "icon": "fab fa-telegram"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com",
+      "icon": "fab fa-twitter"
+    },
+    {
+      "name": "Steam",
+      "url": "https://steam.com",
+      "icon": "fab fa-steam"
+    }
+  ]
+}

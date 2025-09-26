@@ -1,0 +1,24 @@
+{
+  "title": "我的书签",
+  "subtitle": "从浏览器导入的书签收藏",
+  "categories": [
+    {
+      "name": "书签栏",
+      "icon": "fas fa-folder",
+      "sites": [
+        {
+          "name": "到百度首页",
+          "url": "https://www.baidu.com/",
+          "icon": "fas fa-link",
+          "description": ""
+        },
+        {
+          "name": "Google",
+          "url": "https://www.google.com/",
+          "icon": "fab fa-google",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
         class="big"
         v-for="(b_val,b_name) in nav_config"
         :key="b_name"
-        @click="b_val.show = !b_val.show"
+        @click.self="b_val.show = !b_val.show"
         >
         {{ b_val.name}}
         <div
@@ -11,6 +11,7 @@
             v-show="b_val.show"
             v-for="(s_val,s_name) in b_val.content"
             :key="s_name"
+            @click="goto"
         >
             {{s_val.name}}
         </div>
@@ -37,6 +38,11 @@
             })
 
             return {nav_config}
+        },
+        methods:{
+            goto(){
+                
+            }
         }
     }
     
