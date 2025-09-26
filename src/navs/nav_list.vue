@@ -1,7 +1,7 @@
 <template>
     <div
         class="big"
-        v-for="b in nav_key"
+        v-for="b in navKey"
         :key="b.id"
         @click.self="b.show = !b.show"
         >
@@ -9,7 +9,7 @@
         <div
             class="small"
             v-show="b.show"
-            v-for="s in nav_list[b.id]['categories']"
+            v-for="s in navList[b.id]['categories']"
             @click="goto"
         >
             {{s.name}}
@@ -17,39 +17,24 @@
     </div>
 </template>
 
-<script>
-    import { ref, onMounted, reactive } from 'vue'
-    export default{
-        name: 'nav_list',
-        setup(){
-            const nav_key = ref({})
-            const nav_list = reactive({})
-            onMounted(async () => {
-                const res = await fetch('./user/navigation.json')
-                const data = await res.json()
+<script lang="ts">
+    import { storeToRefs } from "pinia";
+    import { useNavStore } from "./../../stores/nav";
+    import { ref, watchEffect } from 'vue'
 
+    const store = useNavStore()
+    const {navKey, navList} = storeToRefs(store)
 
-                for(const k in data){
-                    data[k] = reactive(data[k])
-                    data[k].show = false
-                    const id = data[k].id
-                    const t = await fetch('./user/pages/'+id+'.json')
-                    const te = await t.json()
+    const currentPage = ref()
 
-                    nav_list[id]=te
-                }
-                nav_key.value = data
-            })
-            // console.log(nav_list)
-            return {nav_key,nav_list}
-        },
-        methods:{
-            goto(){
-                
-            }
-        }
+    async function openPage(id: string){
+        currentPage.value = await store.loadPage(id)
     }
     
+    watchEffect(() => {
+        const first = Object.keys(navKey.value)[0]
+        if (first) openPage(first)
+    })
 </script>
 
 <style>
