@@ -102,5 +102,7 @@
         margin-left: 10px;
         font-size: 15px;
         padding: 10px;
+        padding-top: 15px;
+        padding-bottom: 5px;
     }
 </style>
