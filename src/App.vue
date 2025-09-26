@@ -1,6 +1,8 @@
 <template>
     <div class="app">
-        <div class="nav"></div>
+        <div class="left-nav">
+            <nav_main />
+        </div>
         <div class="main">
             <div class="top-Search">
 
@@ -19,14 +21,19 @@
 </template>
 
 <script>
+    import nav_main from './nav.vue'
     export default{
-        name:'app'
+        name:'app',
+        components:{
+            nav_main
+        }
     }
 </script>
 
 <style>
-    .app{
-        display: flex;
-        justify-content: space-between;
+    .left-nav{
+        background-color: #444;
+        height: 100%;
+        width: 200px;
     }
 </style>
