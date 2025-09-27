@@ -20,14 +20,11 @@
     </div>
 </template>
 
-<script>
+<script setup>
     import nav_main from './nav.vue'
-    export default{
-        name:'app',
-        components:{
-            nav_main
-        }
-    }
+    import { navKey } from "./data.js";
+    // console.log(navKey)
+    
 </script>
 
 <style>
