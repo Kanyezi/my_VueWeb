@@ -3,7 +3,7 @@
         class="big"
         v-for="b in navKey"
         :key="b.id"
-        @click.self="b.show=!b.show"
+        @click.self=clear(b,navKey)
        >
         {{ b.name }}
         <div
@@ -19,6 +19,16 @@
 
 <script setup>
     import { navKey, navList } from "./../data";
+    function clear(b,la) {
+      if(b.show){
+        b.show=false;
+        return;
+      }
+      for (let index = 0; index < la.length; index++) {
+        la[index].show=false;
+      }
+      b.show=!b.show;
+    }
 </script>
 
 <style>

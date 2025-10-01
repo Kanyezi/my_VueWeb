@@ -33,6 +33,7 @@
         background-color: #444;
         height: 100%;
         width: 200px;
+        position:fixed
     }
     .app{
       display:flex

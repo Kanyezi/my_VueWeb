@@ -4,14 +4,19 @@
             <h1></h1>
         </div>
         <div class="page">
-          <nav v-for="i in navList" :site=i.site :title=i.titel />
+          <div v-for="i in navKey">
+            <tab v-show="i.show" v-for="ni in navList[i.id].categories" :site=ni.sites :title=ni.name />
+          </div>
         </div>
     </div>
 </template>
-<script>
-  import nav from './tab.vue'
-  import {navList} from './../data.js'
-  consolo.log(navList)
+<script setup>
+  import tab from './tab.vue'
+  import {navList,navKey} from './../data.js'
+
 </script>
 <style>
+  .kuang{
+    display:flex
+  }
 </style>

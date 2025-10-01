@@ -1,11 +1,11 @@
 <template>
-    <div class="kuang">
+    <div class="kuang-tab">
         <div class="title">
           {{title}}
         </div>
         <div class="tabs">
             <div v-for="i in site" class="tab">
-              <p class="fon"></p>
+              <i :class="['fon',i.icon]"></i>
               <p class="name">{{i.name}}</p>
               <p class="description">{{i.description}}</p>
             </div>
@@ -28,13 +28,19 @@
 </script>
 
 <style>
+    .kuang-tab{
+      width:100%;
+      
+    }
     .tabs{
-        display: flex;
-        flex-direction: row;
+      display:flex;
+      flex-wrap:wrap;
+      width:100%;
     }
     .tab{
-        width: 100px;
-        height: 100px;
-        box-shadow: 0 0 10px #ddd;
+      width: 150px;
+      height: 100px;
+      box-shadow: 0 0 10px #ddd;
+      padding: 20px;
     }
 </style>
