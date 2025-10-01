@@ -12,7 +12,7 @@
 
                 </div>
                 <div class="page-subtitl">
-
+                  <page />
                 </div>
             </div>
 
@@ -23,6 +23,7 @@
 <script setup>
     import nav_main from './nav.vue'
     import { navKey } from "./data.js";
+    import page from './pages/page.vue'
     // console.log(navKey)
     
 </script>
@@ -32,5 +33,8 @@
         background-color: #444;
         height: 100%;
         width: 200px;
+    }
+    .app{
+      display:flex
     }
 </style>
