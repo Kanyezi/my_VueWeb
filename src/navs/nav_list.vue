@@ -26,13 +26,12 @@ function clear(b, la) {
 <style>
 .big {
   cursor: pointer;
-  padding: 10px;
-  margin: 0 auto;
-  padding-left: 20px;
   border-radius: 10px;
   width: 150px;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 10px;
   box-sizing: border-box;
+  color: var(--nav-item-color);
 }
 
 .small {

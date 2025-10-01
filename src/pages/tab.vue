@@ -32,9 +32,9 @@ const props = defineProps({
   margin-top: 100px;
   padding: 32px;
   margin: 24px;
-  background-color: #444;
   border-radius: 15px;
   box-sizing: border-box;
+  background: linear-gradient(145deg, var(--card-bg-gradient-1), var(--card-bg-gradient-2));
 }
 
 #page-title {
@@ -55,8 +55,9 @@ const props = defineProps({
   height: 140px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #aaa;
   text-align: center;
+  background: linear-gradient(145deg, var(--secondary-bg), var(--site-card-bg-gradient-1));
+  border: 1px solid var(--border-color);
 }
 
 .tab i {

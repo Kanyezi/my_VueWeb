@@ -30,10 +30,11 @@ import page from './pages/page.vue'
 
 <style>
 .left-nav {
-  background-color: #444;
   height: 100%;
   width: 240px;
-  position: fixed
+  position: fixed;
+  background-color: var(--sidebar-bg);
+  box-shadow: 2px 0 10px var(--shadow-color);
 }
 
 .app {
@@ -43,6 +44,6 @@ import page from './pages/page.vue'
 .main {
   padding: 24px;
   padding-left: 264px;
-  margin-top: 32px;
+  background-color: var(--bg-color);
 }
 </style>
