@@ -3,8 +3,8 @@
         class="big"
         v-for="b in navKey"
         :key="b.id"
-        @click.self=show()
-        >
+        @click.self="b.show=!b.show"
+       >
         {{ b.name }}
         <div
             class="small"
@@ -19,10 +19,6 @@
 
 <script setup>
     import { navKey, navList } from "./../data";
-    function show(){
-        console.log(this.value)
-        this.value=!this.value
-    }
 </script>
 
 <style>

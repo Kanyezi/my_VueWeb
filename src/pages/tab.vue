@@ -10,6 +10,7 @@
 </template>
 
 <script>
+  import {navKey,navList} from './../data.js'
 </script>
 
 <style>
